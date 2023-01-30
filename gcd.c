@@ -3,7 +3,7 @@ int max(int n, int m)
 	return (n > m) ? n : m;
 }
 
-
+//euclidean algorithm
 int gcd(int n, int m)
 {
 	while (1)
