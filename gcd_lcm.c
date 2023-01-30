@@ -18,3 +18,8 @@ int gcd(int n, int m)
 	return max(m, n);
 	
 }
+
+int lcm(int n, int m)
+{
+	return n * m / gcd(n, m);
+}
