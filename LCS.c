@@ -13,14 +13,14 @@ int lcs()
 {
 	int  n;
 	scanf("%d", &n);
-	int a[1004];
-	
+	int a[1004];// 1004는 n의 최대 길이에 따라 변경
+	int l[1004];// 1004는 n의 최대 길이에 따라 변경
 	for (int i = 1;i < n + 1;i++)
 	{
 		scanf("%d", a + i);
 	}
 
-	int l[1004];
+	
 	l[1] = 1;
 	int mini = a[1];
 	int maxi = l[1];
