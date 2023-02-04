@@ -14,7 +14,7 @@ long long recpowm(long long a, long long b, long long p) // recursive power mod 
 {
 	if (b == 0)
 		return 1;
-	long long n = recpow(a, b / 2,p) % p;
+	long long n = recpowm(a, b / 2,p) % p;
 	long long k= (n * n) % p;
 	if (b % 2 == 0)
 		return k;
