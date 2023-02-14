@@ -5,7 +5,7 @@
 
 int co[MAX][MAX];//combination
 
-int calcom() // MAX C MAX 까지 저장함
+void calcom() // MAX C MAX 까지 저장함
 {
 	co[1][1] = 1;
   co[1][0] = 1;
