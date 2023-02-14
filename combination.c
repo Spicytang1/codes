@@ -3,19 +3,18 @@
 #define MAX 1004
 
 
-int co[MAX][MAX];//combination
+int co[MAX][MAX] = { 0 };//combination
 
 void calcom() // MAX C MAX 까지 저장함
 {
-	co[1][1] = 1;
- 	co[1][0] = 1;
-	for (int i = 2;i < MAX;i++)
+	co[0][0] = 1;
+	for (int i = 1;i < MAX;i++)
 	{
 		co[i][0] = 1;
 		co[i][1] = i;
 		co[i][i - 1] = i;
 		co[i][i] = 1;
-		for (int j = 2;j < i - 1;j++)
+		for (int j = 1;j < i - 1;j++)
 		{
 			co[i][j] = co[i - 1][j - 1] + co[i - 1][j];
 			//co[i][j] %= DIV;
