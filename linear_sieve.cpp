@@ -2,14 +2,16 @@
 //https://ahgus89.github.io/algorithm/Linear-sieve/ 참고
 //1부터 MAX까지 모든 소수를 pl에 저장함
 //ac[i]는 i가 소수면 0이고 합성수면 가장 작은 소인수 값이다
+//시간복잡도는 O(n)
 
 #define MAX 5005
 
 int ac[MAX] = { 0 };
+vector<int> pl;
 
 void linear_sieve()
 {
-	vector<int> pl;
+	
 	for (int i = 2;i <= MAX;i++)
 	{
 		if (!ac[i])
