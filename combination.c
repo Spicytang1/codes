@@ -8,7 +8,7 @@ int co[MAX][MAX];//combination
 void calcom() // MAX C MAX 까지 저장함
 {
 	co[1][1] = 1;
-  co[1][0] = 1;
+ 	co[1][0] = 1;
 	for (int i = 2;i < MAX;i++)
 	{
 		co[i][0] = 1;
@@ -19,7 +19,7 @@ void calcom() // MAX C MAX 까지 저장함
 		{
 			co[i][j] = co[i - 1][j - 1] + co[i - 1][j];
 			//co[i][j] %= DIV;
-	    //DIV로 나눈 값을 배열에 저장
+	 		//DIV로 나눈 값을 배열에 저장
 		}
 	}
 	
