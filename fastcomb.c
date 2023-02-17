@@ -41,7 +41,9 @@ long long comb(long long n, long long k)
 		nmk *= i;
 		nmk %= DIV;
 	}
-	long long ans = (nn * recpowm(kk, DIV - 2, DIV)) % DIV;
+		long long ans = (nn * recpowm(kk, DIV - 2, DIV)) % DIV;
 	ans = (ans * recpowm(nmk, DIV - 2, DIV)) % DIV;
+	return ans;
+
 
 }
