@@ -1,4 +1,5 @@
-//nCk를 계산해주는 알고리즘
+//nCk를 DIV로 나눈 값을 계산해주는 알고리즘
+//단, DIV는 소수
 //시간복잡도는 O(n+log(DIV))
 
 //recpowm 함수는 https://github.com/Spicytang1/codes/blob/main/recpow_recpowm.c
