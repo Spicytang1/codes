@@ -7,11 +7,10 @@
 #define MAX 5005
 
 int ac[MAX] = { 0 };
-vector<int> pl;
 
-void linear_sieve()
+vector<int> linear_sieve()
 {
-	
+	vector<int> pl;
 	for (int i = 2;i <= MAX;i++)
 	{
 		if (!ac[i])
@@ -25,4 +24,5 @@ void linear_sieve()
 			ac[i * j] = j;
 		}
 	}
+	return pl;
 }
