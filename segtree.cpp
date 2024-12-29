@@ -50,11 +50,11 @@ public:
 			mid = (l + r) / 2;
 		}
 		A[d] += c;
+		B[i] += c;
 	}
 	void set(ll i, ll c)
 	{
 		add(i, c - B[i]);
-		B[i] = c;
 	}
 	
 	ll find(ll i, ll j)
